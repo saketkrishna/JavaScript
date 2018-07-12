@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="03_styles.css">
+</head>
+
+<body>
+
+<h2>Internal JavaScript Example</h2>
+<div>
+    <h1 id="display"></h1>
+</div>
+
+<!-- Change the below Text using Internal JavaScript -->
+
+<div id="text-div">
+    <p id="green-p">Change my Color using the below Buttons</p>
+    <button onclick="blue()" id="blue">Change to Blue</button>
+    <button onclick="red()" id="red">Change to Red</button>
+</div>
+
+<!-- Change the below Image using Internal JavaScript -->
+
+<div id="image-div">
+    <img src="../img/google.jpg" width="300" height="150" id="myImage">
+    <br>
+    <button onclick="facebook()" id="facebook"><i class="fa fa-facebook"></i> Facebook</button>
+    <button onclick="youtube()" id="youtube"><i class="fa fa-youtube-play"></i> Youtube</button>
+</div>
+
+
+<!-- Add your Java Script code here for Internal Way-->
+<script>
+    function blue() {
+        document.getElementById('green-p').style.color = 'blue';
+    }
+    function red() {
+        document.getElementById('green-p').style.color = 'red';
+    }
+    function facebook() {
+        document.getElementById('myImage').setAttribute('src','../img/facebook.jpg');
+    }
+    function youtube() {
+        document.getElementById('myImage').setAttribute('src','../img/youtube.jpg');
+    }
+</script>
+
+</body>
+</html>
